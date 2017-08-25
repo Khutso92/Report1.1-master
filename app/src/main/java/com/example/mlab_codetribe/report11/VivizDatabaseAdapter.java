@@ -6,6 +6,7 @@ import android.database.Cursor;
 import android.database.SQLException;
 import android.database.sqlite.SQLiteDatabase;
 import android.database.sqlite.SQLiteOpenHelper;
+import android.widget.TextView;
 
 /**
  * Created by mlab - codetribe on 8/18/2017.
@@ -16,6 +17,8 @@ public class VivizDatabaseAdapter {
     VivzHelper helper;
     int cid;
 
+
+    TextView txt_name ;
     public static String studentName = "";
     Context context;
 
@@ -203,6 +206,8 @@ public class VivizDatabaseAdapter {
             int class_test2 = cursor.getInt(2);
             int assignment = cursor.getInt(3);
             int exam = cursor.getInt(4);
+
+
             String subject_selected = cursor.getString(5);
 
             // calc. average
@@ -216,6 +221,7 @@ public class VivizDatabaseAdapter {
                         + exam + "\naverage: " + avg +
                         "\ncomment: "+ comment(avg) +
                         "\nsubject name: " + subject_selected + "\n\n");
+
             }
         }
 

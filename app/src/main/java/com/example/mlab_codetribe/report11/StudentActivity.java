@@ -23,14 +23,14 @@ public class StudentActivity extends AppCompatActivity {
 
         txt_name = (TextView) findViewById(R.id.txt_name);
 
-        String data =  vivizHelper.Report();
-        txt_name.setText(VivizDatabaseAdapter.studentName +"'s" + " report");
+        vivizHelper.Report();
+        txt_name.setText( vivizHelper.Report() );
     }
 
     public void MoveToMain(View view){
 
-        String data =  vivizHelper.Report();
+          vivizHelper.Report();
 
-        Message.AlertMessage(this,data);
+    //    Message.AlertMessage(this,data);
     }
 }
