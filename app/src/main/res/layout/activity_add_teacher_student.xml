@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="16dp"
+    android:orientation="vertical"
+    tools:context="com.example.mlab_codetribe.report11.AddTeacherStudentActivity">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="who are you registering for :" />
+
+    <RadioGroup
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <RadioButton
+            android:id="@+id/rad_teacher"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="teacher" />
+
+        <RadioButton
+            android:id="@+id/rad_student"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="student" />
+
+    </RadioGroup>
+
+
+    <EditText
+        android:id="@+id/edt_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="enter name" />
+
+    <EditText
+        android:id="@+id/edt_password"
+        android:layout_width="match_parent"
+
+        android:layout_height="wrap_content"
+        android:hint="enter password" />
+
+
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="addUser"
+        android:layout_marginBottom="5dp"
+        android:text="register" />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="viewDetails"
+        android:text=" view registered users"/>
+</LinearLayout>
